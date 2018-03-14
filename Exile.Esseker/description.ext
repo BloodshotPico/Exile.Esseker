@@ -1,10 +1,12 @@
 #define true 1
 #define false 0
+// Required for the XM8, do not remove!
+#include "RscDefines.hpp"
 
 ///////////////////////////////////////////////////////////////////////////////
 // Server Settings - Modify at will
 ///////////////////////////////////////////////////////////////////////////////
-author = "Exile Mod Team";
+author = "Exile Malden by [FPS]kuplion";
 onLoadName = "Exile Mod";
 onLoadMission= "www.exilemod.com";
 loadScreen = "exile_assets\texture\mod\logo.paa";
@@ -64,7 +66,7 @@ showHUD[] =
     false,  // Commanding menu
     false,  // Group Bar
     true,   // HUD Weapon Cursors
-    false   // Squad Radar
+    true   // Vehicle Panel (Required for GPS)
 };
 
 #include "config.cpp"

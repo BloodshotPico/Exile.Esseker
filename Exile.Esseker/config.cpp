@@ -24,7 +24,7 @@ class CfgClans
 
 		NOTE: 
 	*/
-	clanNameAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ._-!:\\/";
+	clanNameAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ._-!\\/";
 
 	/*
 
@@ -371,6 +371,27 @@ class CraftConcreteDoorway: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
 };
+class CraftConcreteDrawbridge: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Concrete Drawbridge";
+	pictureItem = "Exile_Item_ConcreteDrawBridgeKit";
+	requiresConcreteMixer = true;
+	returnedItems[] = 
+	{
+		{1, "Exile_Item_ConcreteDrawBridgeKit"},
+		{4, "Exile_Item_WaterCanisterEmpty"},
+		{1, "Exile_Item_FuelCanisterEmpty"}
+	};
+	components[] = 
+	{
+		{4, "Exile_Item_Cement"},
+		{4, "Exile_Item_Sand"},
+		{4, "Exile_Item_MetalPole"},
+		{3, "Exile_Item_JunkMetal"},
+		{4, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+};
 class CraftConcreteFloor: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Concrete Floor";
@@ -411,6 +432,26 @@ class CraftConcreteFloorPort: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
 };
+class CraftConcreteFloorPortSmall: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Concrete Floor Port (Small)";
+	pictureItem = "Exile_Item_ConcreteFloorPortSmallKit";
+	requiresConcreteMixer = true;
+	returnedItems[] = 
+	{
+		{1, "Exile_Item_ConcreteFloorPortSmallKit"},
+		{3, "Exile_Item_WaterCanisterEmpty"},
+		{1, "Exile_Item_FuelCanisterEmpty"}
+	};
+	components[] = 
+	{
+		{3, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{2, "Exile_Item_MetalPole"},
+		{3, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+};
 class CraftConcreteGate: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Concrete Gate";
@@ -428,6 +469,27 @@ class CraftConcreteGate: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_Sand"},
 		{4, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_WaterCanisterDirtyWater"},
+		{1, "Exile_Item_FuelCanisterFull"}
+	};
+};
+class CraftConcreteLadderHatch: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Concrete Ladder Hatch";
+	pictureItem = "Exile_Item_ConcreteLadderHatchKit";
+	requiresConcreteMixer = true;
+	returnedItems[] = 
+	{
+		{1, "Exile_Item_ConcreteLadderHatchKit"},
+		{3, "Exile_Item_WaterCanisterEmpty"},
+		{1, "Exile_Item_FuelCanisterEmpty"}
+	};
+	components[] = 
+	{
+		{3, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{2, "Exile_Item_MetalPole"},
+		{3, "Exile_Item_JunkMetal"},
+		{3, "Exile_Item_WaterCanisterDirtyWater"},
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
 };
@@ -586,6 +648,34 @@ class CraftMetalHedgehog: Exile_AbstractCraftingRecipe
 	};
 	tools[] = {"Exile_Item_Grinder"};
 };
+class CraftMetalLadder: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Metal Ladder";
+	pictureItem = "Exile_Item_MetalLadderKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_MetalLadderKit"}
+	};
+	components[] =
+	{
+		{6, "Exile_Item_JunkMetal"}
+	};
+};
+class CraftMetalLadderDouble: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Metal Ladder (Double Tall)";
+	pictureItem = "Exile_Item_MetalLadderDoubleKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_MetalLadderDoubleKit"}
+	};
+	components[] =
+	{
+		{2, "Exile_Item_MetalLadderKit"}
+	};
+};
 class CraftMetalPole: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Metal Pole";
@@ -600,6 +690,21 @@ class CraftMetalPole: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_JunkMetal"}
 	};
 	tools[] = {"Exile_Item_Grinder"};
+};
+class CraftOldChest: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Old Chest";
+	pictureItem = "Exile_Item_OldChestKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] = 
+	{
+		{1, "Exile_Item_OldChestKit"}
+	};
+	components[] = 
+	{
+		{3, "Exile_Item_WoodPlank"},
+		{3, "Exile_Item_JunkMetal"}
+	};
 };
 class CraftPortableGenerator: Exile_AbstractCraftingRecipe
 {
@@ -790,6 +895,22 @@ class CraftWoodDoorWay: Exile_AbstractCraftingRecipe
 		{6, "Exile_Item_WoodPlank"}
 	};
 };
+class CraftWoodDrawBridge: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Wood Draw Bridge";
+	pictureItem = "Exile_Item_WoodDrawBridgeKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_WoodDrawBridgeKit"}
+	};
+	components[] =
+	{
+		{8, "Exile_Item_WoodPlank"},
+		{1, "Exile_Item_JunkMetal"},
+		{1, "Exile_Item_MetalScrews"}
+	};
+};
 class CraftWoodFloor: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Wood Floor";
@@ -818,6 +939,20 @@ class CraftWoodFloorPort: Exile_AbstractCraftingRecipe
 		{6, "Exile_Item_WoodPlank"}
 	};
 };
+class CraftWoodFloorPortSmall: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Wood Floor Port (Small)";
+	pictureItem = "Exile_Item_WoodFloorPortSmallKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_WoodFloorPortSmallKit"}
+	};
+	components[] =
+	{
+		{6, "Exile_Item_WoodPlank"}
+	};
+};
 class CraftWoodGate: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Wood Gate";
@@ -830,6 +965,35 @@ class CraftWoodGate: Exile_AbstractCraftingRecipe
 	components[] = 
 	{
 		{8, "Exile_Item_WoodPlank"}
+	};
+};
+class CraftWoodLadder: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Wood Ladder";
+	pictureItem = "Exile_Item_WoodLadderKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_WoodLadderKit"}
+	};
+	components[] =
+	{
+		{6, "Exile_Item_WoodPlank"}
+	};
+};
+class CraftWoodLadderHatch: Exile_AbstractCraftingRecipe
+{
+	name = "Craft Wood Ladder Hatch";
+	pictureItem = "Exile_Item_WoodLadderHatchKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_WoodLadderHatchKit"}
+	};
+	components[] =
+	{
+		{6, "Exile_Item_WoodPlank"},
+		{3, "Exile_Item_JunkMetal"}
 	};
 };
 class CraftWoodPlank: Exile_AbstractCraftingRecipe
@@ -930,6 +1094,320 @@ class CraftWorkBench: Exile_AbstractCraftingRecipe
 		{4, "Exile_Item_WoodLog"}
 	};
 };
+class CookAlsatianSteak: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Alsatian Steak";
+	pictureItem = "Exile_Item_AlsatianSteak_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_AlsatianSteak_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_AlsatianSteak_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookCatSharkFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Cat Shark Filet";
+	pictureItem = "Exile_Item_CatSharkFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_CatSharkFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_CatSharkFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookChickenFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Chicken Filet";
+	pictureItem = "Exile_Item_ChickenFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_ChickenFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_ChickenFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookFinSteak: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Fin Steak";
+	pictureItem = "Exile_Item_FinSteak_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_FinSteak_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_FinSteak_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookGoatSteak: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Goat Steak";
+	pictureItem = "Exile_Item_GoatSteak_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_GoatSteak_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_GoatSteak_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookMackerelFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Mackerel Filet";
+	pictureItem = "Exile_Item_MackerelFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_MackerelFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_MackerelFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookMulletFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Mullet Filet";
+	pictureItem = "Exile_Item_MulletFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_MulletFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_MulletFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookOrnateFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Ornate Filet";
+	pictureItem = "Exile_Item_OrnateFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_OrnateFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_OrnateFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookRabbitSteak: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Rabbit Steak";
+	pictureItem = "Exile_Item_RabbitSteak_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_RabbitSteak_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_RabbitSteak_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookRoosterFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Rooster Filet";
+	pictureItem = "Exile_Item_RoosterFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_RoosterFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_RoosterFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookSalemaFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Salema Filet";
+	pictureItem = "Exile_Item_SalemaFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_SalemaFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_SalemaFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookSheepSteak: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Sheep Steak";
+	pictureItem = "Exile_Item_SheepSteak_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_SheepSteak_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_SheepSteak_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookSnakeFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Snake Filet";
+	pictureItem = "Exile_Item_SnakeFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_SnakeFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_SnakeFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookTunaFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Tuna Filet";
+	pictureItem = "Exile_Item_TunaFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_TunaFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_TunaFilet_Raw"}
+	};
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+class CookTurtleFilet: Exile_AbstractCraftingRecipe
+{
+	name = "Cook Turtle Filet";
+	pictureItem = "Exile_Item_TurtleFilet_Cooked";
+	requiresFire = 1;
+	returnedItems[] =
+	{
+		{1, "Exile_Item_TurtleFilet_Cooked"}
+	};
+	tools[] =
+	{
+		"Exile_Item_CookingPot"
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_TurtleFilet_Raw"}
+	};
+};
+
+
 class EmptyFuelCanister: Exile_AbstractCraftingRecipe
 {
 	name = "Empty Fuel Canister";
@@ -1118,6 +1596,23 @@ class UpgradeToWoodDoor: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_WoodPlank"}
 	};
 };
+class UpgradeToWoodDrawBridge: Exile_AbstractCraftingRecipe
+{
+	name = "Upgrade to Wood Draw Bridge";
+	pictureItem = "Exile_Item_WoodDrawBridgeKit";
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] =
+	{
+		{1, "Exile_Item_WoodDrawBridgeKit"}
+	};
+	components[] =
+	{
+		{1, "Exile_Item_WoodGateKit"},
+		{2, "Exile_Item_WoodPlank"},
+		{1, "Exile_Item_JunkMetal"},
+		{1, "Exile_Item_MetalScrews"}
+	};
+};
 class UpgradeToWoodFloorPort: Exile_AbstractCraftingRecipe
 {
 	name = "Upgrade to Wood Floor Port";
@@ -1177,6 +1672,79 @@ class UpgradeToWoodWindow: Exile_AbstractCraftingRecipe
 		{2, "Exile_Item_WoodPlank"}
 	};
 };
+};
+class CfgExileAnimals
+{
+	/**
+	 * Should animals spawn on your server? Y/N?
+	 */
+	enabled = 1;
+
+	/**
+	 * Should vanilla Arma animals (fish, rabbits, bees, etc.) be disabled?
+	 * We think it should, since it might confuse players if they cant eat them. *munches on bees*
+	 */
+	disableVanillaAnimals = 1;
+
+	/**
+	 * Which animals to spawn. 
+	 * Exile automatically spawns a color variation of that animal, if variations exist.
+	 * Each player (client) has a maximum of one animal at a time.
+	 * Exile checks which animal type can spawn in front of the player and then
+	 * picks a random one. 
+	 *
+	 * For now it is like this:
+	 * 
+	 * - Goats spawn on hill tops, but not in forests
+	 * - Sheep spawn on meadows, but not next to forests and not on hill tops
+	 * - Hens and roosters spawn next to buildings only
+	 *
+	 * => More animal types will follow in upcoming Exile versions, hopefully.
+	 */
+	animalTypes[] = 
+	{
+		"Exile_Animal_Rooster_Abstract",
+		"Exile_Animal_Hen_Abstract",
+		"Exile_Animal_Goat_Abstract",
+		"Exile_Animal_Sheep_Abstract"
+	};
+
+	/**
+	 * Animals are always spawned in front of the player, but
+	 * at least a certain distance away. The radius is applied on top.
+	 *
+	 * Example:
+	 * Distance = 150
+	 * Radius = 50
+	 *
+	 * => Minimum Distance from Player = 150 
+	 * => Maximum Distance from Player = 150 + 50 * 2
+	 */
+	spawnDistance = 150;
+	spawnRadius = 50;
+
+	/**
+	 * Specifies the minimum time in seconds between spawning animals.
+	 * When the animal diededed, this time has to pass before it spawns
+	 * a new one.
+	 *
+	 * It is a min/max setting, so the intervals will be uneven and a bit random.
+	 * By default it will take 5 to 10 minutes to respawn a new animal.
+	 */
+	minimumSpawnDelay = 5 * 60;
+	maximumSpawnDelay = 10 * 60;
+
+	/**
+	 * Clients will despawn animals if no player is in this radius around the animal
+	 * This check is ran every 1 minute, so it is pretty unprecise, but performance-friendly. 
+	 */
+	keepAliveRadius = 500;
+
+	/**
+	 * Defines the minimum lifetime of an animal in seconds. During this time, right after spawning,
+	 * it will not despawn. (+-0..1 minute delay)
+	 */
+	minimumLifetime = 5 * 60;
 };
 class CfgExileArsenal
 {
@@ -1345,7 +1913,7 @@ class CfgExileArsenal
 	class H_Cap_red 								{ quality = 1; price = 6; };
 	class H_Cap_tan 								{ quality = 1; price = 6; };
 	class H_Cap_tan_specops_US 						{ quality = 1; price = 6; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Glasses
 	///////////////////////////////////////////////////////////////////////////////
@@ -1613,19 +2181,45 @@ class CfgExileArsenal
 	//class Exile_Item_BaseCameraKit				{ quality = 2; price = 5000; };
 	class Exile_Item_CamoTentKit					{ quality = 1; price = 250; };
 	class Exile_Item_MetalPole						{ quality = 1; price = 800; };
-	//class Exile_Item_MetalScrews					{ quality = 1; price = 100; };
-	//class Exile_Item_MetalWire						{ quality = 1; price = 100; };
-	//class Exile_Item_Cement							{ quality = 1; price = 20; };
+	class Exile_Item_MetalScrews					{ quality = 1; price = 100; };
+	//class Exile_Item_MetalWire					{ quality = 1; price = 100; };
+	//class Exile_Item_Cement						{ quality = 1; price = 20; };
 	//class Exile_Item_Sand							{ quality = 1; price = 20; };
 	//class Exile_Item_CarWheel						{ quality = 1; price = 1000; };
 	
+	// Added in 1.0.3, but not used
+	//class Exile_Item_SprayCan_Black				{ quality = 2; price = 20; };
+	//class Exile_Item_SprayCan_Red					{ quality = 2; price = 20; };
+	//class Exile_Item_SprayCan_Green				{ quality = 2; price = 20; };
+	//class Exile_Item_SprayCan_White				{ quality = 2; price = 20; };
+	//class Exile_Item_SprayCan_Blue				{ quality = 2; price = 20; };
+	//class Exile_Item_BurlapSack					{ quality = 2; price = 5; };
+	//class Exile_Item_Bullets_556					{ quality = 2; price = 5; };
+	//class Exile_Item_Bullets_762					{ quality = 2; price = 5; };
+	//class Exile_Item_WeaponParts					{ quality = 2; price = 20; };
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Food
 	///////////////////////////////////////////////////////////////////////////////
+	class Exile_Item_SheepSteak_Cooked				{ quality = 4; price = 230; }; //100, 30
+	class Exile_Item_AlsatianSteak_Cooked			{ quality = 4; price = 230; }; //100, 30
+	class Exile_Item_CatSharkFilet_Cooked			{ quality = 4; price = 230; }; //100, 30
+	class Exile_Item_FinSteak_Cooked				{ quality = 4; price = 230; }; //100, 30
+	class Exile_Item_GoatSteak_Cooked				{ quality = 4; price = 230; }; //100, 30
+	class Exile_Item_TurtleFilet_Cooked				{ quality = 4; price = 230; }; //100, 30
+	class Exile_Item_TunaFilet_Cooked				{ quality = 3; price = 220; }; //90, 30
+	class Exile_Item_RabbitSteak_Cooked				{ quality = 3; price = 215; }; //80, 30
 	class Exile_Item_EMRE							{ quality = 3; price = 54; }; //75, 60
+	class Exile_Item_ChickenFilet_Cooked			{ quality = 3; price = 205; }; //70, 30
+	class Exile_Item_RoosterFilet_Cooked			{ quality = 3; price = 205; }; //70, 30
+	class Exile_Item_MulletFilet_Cooked				{ quality = 3; price = 200; }; //65, 30
+	class Exile_Item_SalemaFilet_Cooked				{ quality = 3; price = 200; }; //65, 30
 	class Exile_Item_GloriousKnakworst				{ quality = 3; price = 40; }; //60, 30
+	class Exile_Item_MackerelFilet_Cooked			{ quality = 3; price = 190; }; //55, 30
 	class Exile_Item_Surstromming					{ quality = 3; price = 34; }; //55, 25
 	class Exile_Item_SausageGravy					{ quality = 3; price = 30; }; //50, 25
+	class Exile_Item_OrnateFilet_Cooked				{ quality = 3; price = 180; }; //40, 30
+	class Exile_Item_SnakeFilet_Cooked				{ quality = 3; price = 180; }; //40, 30
 	class Exile_Item_Catfood						{ quality = 2; price = 24; }; //40, 40
 	class Exile_Item_ChristmasTinner				{ quality = 3; price = 20; }; //40, 60
 	class Exile_Item_BBQSandwich					{ quality = 3; price = 20; }; //40, 60
@@ -1633,11 +2227,26 @@ class CfgExileArsenal
 	class Exile_Item_Dogfood						{ quality = 2; price = 18; }; //30, 30
 	class Exile_Item_BeefParts						{ quality = 2; price = 18; }; //30, 30
 	class Exile_Item_Cheathas						{ quality = 2; price = 18; }; //30, 30
+	class Exile_Item_CatSharkFilet_Raw				{ quality = 2; price = 125; }; //25, 30
 	class Exile_Item_Noodles						{ quality = 1; price = 14; }; //25, 50
 	class Exile_Item_SeedAstics						{ quality = 1; price = 12; }; //20, 40
+	class Exile_Item_TunaFilet_Raw					{ quality = 2; price = 120; }; //20, 30
+	class Exile_Item_AlsatianSteak_Raw				{ quality = 2; price = 115; };	//15, 30
+	class Exile_Item_TurtleFilet_Raw				{ quality = 2; price = 115; }; //15, 30
+	class Exile_Item_SheepSteak_Raw					{ quality = 2; price = 115; }; //15, 30
+	class Exile_Item_FinSteak_Raw					{ quality = 2; price = 115; }; //15, 30
+	class Exile_Item_GoatSteak_Raw					{ quality = 2; price = 115; }; //15, 30
 	class Exile_Item_Raisins						{ quality = 1; price = 10; }; //15, 30
+	class Exile_Item_ChickenFilet_Raw				{ quality = 2; price = 110; }; //10, 30
+	class Exile_Item_RoosterFilet_Raw				{ quality = 2; price = 110; }; //10, 30
 	class Exile_Item_Moobar							{ quality = 1; price = 8; }; //10, 30
 	class Exile_Item_InstantCoffee					{ quality = 1; price = 20; }; //5, 10
+	class Exile_Item_MackerelFilet_Raw				{ quality = 2; price = 108; }; //5, 30
+	class Exile_Item_MulletFilet_Raw				{ quality = 2; price = 108; }; //5, 30
+	class Exile_Item_OrnateFilet_Raw				{ quality = 2; price = 108; }; //5, 30
+	class Exile_Item_RabbitSteak_Raw				{ quality = 2; price = 108; }; //5, 30
+	class Exile_Item_SalemaFilet_Raw				{ quality = 2; price = 108; }; //5, 30
+	class Exile_Item_SnakeFilet_Raw					{ quality = 2; price = 108; }; //5, 30
 	class Exile_Item_Can_Empty						{ quality = 1; price = 1; sellPrice = 1; };
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -1654,14 +2263,14 @@ class CfgExileArsenal
 
 	///////////////////////////////////////////////////////////////////////////////
 	// First Aid
-	///////////////////////////////////////////////////////////////////////////////	
+	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Item_InstaDoc                       { quality = 5; price = 1250; };
 	class Exile_Item_Vishpirin						{ quality = 3; price = 300; };
 	class Exile_Item_Bandage	                    { quality = 2; price = 100; };
 	class Exile_Item_Heatpack	                    { quality = 1; price = 50; };
 
 	//class Exile_Item_Defibrillator				{ quality = 1; price = 7500; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Tools
 	///////////////////////////////////////////////////////////////////////////////
@@ -1688,7 +2297,7 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Navigation
 	///////////////////////////////////////////////////////////////////////////////
-	class ItemWatch									{ quality = 1; price = 2; };	
+	class ItemWatch									{ quality = 1; price = 2; };
 	class ItemGPS									{ quality = 2; price = 40; };
 	class ItemMap									{ quality = 1; price = 6; };
 	class ItemCompass								{ quality = 1; price = 6; };
@@ -1824,11 +2433,14 @@ class CfgExileArsenal
 	class 9Rnd_45ACP_Mag 									{ quality = 1; price = 6; };
 
 	// Price for bullet cam magazines is normal magazine price + 20 pop tabs per bullet
-	class Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag		{ quality = 6; price = 40 +  5 * 20; };
-	class Exile_Magazine_5Rnd_127x108_APDS_Bullet_Cam_Mag	{ quality = 6; price = 40 +  10 * 20; };
-	class Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag	{ quality = 6; price = 40 + 10 * 20; };
-	class Exile_Magazine_7Rnd_408_Bullet_Cam_Mag			{ quality = 6; price = 10 +  7 * 20; };
-	class Exile_Magazine_10Rnd_338_Bullet_Cam_Mag			{ quality = 6; price = 30 + 10 * 20; };
+	class Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag 			{ quality = 6; price = 40 +  5 * 20; };
+	class Exile_Magazine_5Rnd_127x108_APDS_Bullet_Cam_Mag 		{ quality = 6; price = 40 +  5 * 20; };
+	class Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag 		{ quality = 6; price = 40 + 10 * 20; };
+	class Exile_Magazine_7Rnd_408_Bullet_Cam_Mag 				{ quality = 6; price = 10 +  7 * 20; };
+	class Exile_Magazine_10Rnd_338_Bullet_Cam_Mag 				{ quality = 6; price = 30 + 10 * 20; };
+	class Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag 		{ quality = 6; price = 40 + 10 * 20; };
+	class Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag 		{ quality = 6; price = 40 +  5 * 20; };
+	class Exile_Magazine_5Rnd_127x108_APDS_KSVK_Bullet_Cam_Mag 	{ quality = 6; price = 40 +  5 * 20; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Flares
@@ -1975,7 +2587,7 @@ class CfgExileArsenal
 	class srifle_GM6_F 								{ quality = 6; price = 900; };
 	class srifle_LRR_camo_F 						{ quality = 6; price = 850; };
 	class srifle_LRR_F 								{ quality = 6; price = 850; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// ArmA 2 Weapons
 	///////////////////////////////////////////////////////////////////////////////
@@ -2001,7 +2613,13 @@ class CfgExileArsenal
 	class Exile_Weapon_Taurus						{ quality = 1; price = 100; };
 	class Exile_Weapon_TaurusGold					{ quality = 1; price = 150; };
 	class Exile_Weapon_M1014						{ quality = 2; price = 200; };
-	
+	class Exile_Weapon_SA61							{ quality = 1; price = 150; };
+	class Exile_Weapon_m107							{ quality = 5; price = 850; };
+	class Exile_Weapon_ksvk							{ quality = 5; price = 850; };
+	class Exile_Weapon_M4							{ quality = 2; price = 300; };
+	class Exile_Weapon_M16A4						{ quality = 2; price = 350; };
+	class Exile_Weapon_M16A2						{ quality = 1; price = 300; };
+
 	///////////////////////////////////////////////////////////////////////////////
 	// ArmA 2 Ammunition
 	///////////////////////////////////////////////////////////////////////////////
@@ -2028,7 +2646,13 @@ class CfgExileArsenal
 	class Exile_Magazine_20Rnd_9x39						{ quality = 1; price = 20; };
 	class Exile_Magazine_8Rnd_74Slug					{ quality = 1; price = 20; };
 	class Exile_Magazine_8Rnd_74Pellets					{ quality = 1; price = 20; }; // broken?
-	
+	class Exile_Magazine_10Rnd_765x17_SA61				{ quality = 1; price = 10; };
+	class Exile_Magazine_20Rnd_765x17_SA61				{ quality = 1; price = 20; };
+	class Exile_Magazine_10Rnd_127x99_m107				{ quality = 3; price = 30; };
+	class Exile_Magazine_5Rnd_127x108_APDS_KSVK			{ quality = 3; price = 40; };
+	class Exile_Magazine_5Rnd_127x108_KSVK				{ quality = 3; price = 30; };
+
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Apex Items & Weapons
 	///////////////////////////////////////////////////////////////////////////////
@@ -2057,8 +2681,10 @@ class CfgExileArsenal
 	class arifle_CTAR_hex_F           { quality = 2; price = 450; };
 	class arifle_CTAR_ghex_F          { quality = 2; price = 450; };
 	class arifle_CTAR_GL_blk_F        { quality = 2; price = 450; };
+	class arifle_CTAR_GL_ghex_F       { quality = 2; price = 450; };
+	class arifle_CTAR_GL_hex_F        { quality = 2; price = 450; };
 	class arifle_CTARS_blk_F          { quality = 2; price = 450; };
-	class arifle_CTARS_ghex_F          { quality = 2; price = 450; };
+	class arifle_CTARS_ghex_F         { quality = 2; price = 450; };
 	class arifle_CTARS_hex_F          { quality = 2; price = 450; };
 	class arifle_SPAR_01_blk_F        { quality = 1; price = 400; };
 	class arifle_SPAR_01_khk_F        { quality = 1; price = 400; };
@@ -2071,7 +2697,7 @@ class CfgExileArsenal
 	class arifle_SPAR_02_snd_F        { quality = 2; price = 550; };
 	class arifle_SPAR_03_blk_F        { quality = 3; price = 600; };
 	class arifle_SPAR_03_khk_F        { quality = 3; price = 600; };
-	class arifle_SPAR_03_snd_F        { quality = 3; price = 600; };					
+	class arifle_SPAR_03_snd_F        { quality = 3; price = 600; };
 	class muzzle_snds_H_khk_F         { quality = 2; price = 50; };
 	class muzzle_snds_H_snd_F         { quality = 2; price = 50; };
 	class muzzle_snds_58_blk_F        { quality = 1; price = 20; };
@@ -2150,7 +2776,7 @@ class CfgExileArsenal
 	class H_Helmet_Skate              { quality = 2; price = 20; };
 	class H_HelmetB_TI_tna_F          { quality = 4; price = 100; };
 	//class H_HelmetO_ViperSP_hex_F     { quality = 4; price = 1000; };		//Themal
-	//class H_HelmetO_ViperSP_ghex_F    { quality = 4; price = 1000; }; 	//Themal 
+	//class H_HelmetO_ViperSP_ghex_F    { quality = 4; price = 1000; }; 	//Themal
 	class H_HelmetB_tna_F             { quality = 3; price = 50; };
 	class H_HelmetB_Enh_tna_F         { quality = 4; price = 100; };
 	class H_HelmetB_Light_tna_F       { quality = 2; price = 20; };
@@ -2201,7 +2827,7 @@ class CfgExileArsenal
 	class B_ViperLightHarness_hex_F         { quality = 2; price = 200; };
 	class B_ViperLightHarness_khk_F         { quality = 2; price = 200; };
 	class B_ViperLightHarness_oli_F         { quality = 2; price = 200; };
-	
+
 	class 30Rnd_9x21_Mag_SMG_02						{quality = 1; price = 10; };
 	class 30Rnd_9x21_Mag_SMG_02_Tracer_Red          {quality = 1; price = 15; };
 	class 30Rnd_9x21_Mag_SMG_02_Tracer_Yellow       {quality = 1; price = 15; };
@@ -2228,6 +2854,15 @@ class CfgExileArsenal
 	class 200Rnd_556x45_Box_Tracer_Red_F            {quality = 1; price = 90; };
 	class 10Rnd_9x21_Mag							{quality = 1; price = 10; };
 	
+	// Jets DLC items
+	class V_DeckCrew_yellow_F						{ quality = 2; price = 30; };
+	class V_DeckCrew_blue_F							{ quality = 2; price = 30; };
+	class V_DeckCrew_green_F						{ quality = 2; price = 30; };
+	class V_DeckCrew_red_F							{ quality = 2; price = 30; };
+	class V_DeckCrew_white_F						{ quality = 2; price = 30; };
+	class V_DeckCrew_brown_F						{ quality = 2; price = 30; };
+	class V_DeckCrew_violet_F						{ quality = 2; price = 30; };
+
 	///////////////////////////////////////////////////////////////////////////////
 	// BIKES
 	///////////////////////////////////////////////////////////////////////////////
@@ -2346,10 +2981,10 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Taru_Transport_CSAT						{ quality = 3; price = 17000; };
 	class Exile_Chopper_Taru_Transport_Black					{ quality = 3; price = 17000; };
-	                                                                                      
+
 	class Exile_Chopper_Taru_CSAT								{ quality = 4; price = 33000; };
 	class Exile_Chopper_Taru_Black								{ quality = 4; price = 33000; };
-                                                                                          
+
 	class Exile_Chopper_Taru_Covered_CSAT						{ quality = 4; price = 43000; };
 	class Exile_Chopper_Taru_Covered_Black						{ quality = 4; price = 43000; };
 
@@ -2364,7 +2999,7 @@ class CfgExileArsenal
 	class Exile_Plane_AN2_Green									{ quality = 2; price = 17000; };
 	class Exile_Plane_AN2_White									{ quality = 2; price = 17000; };
 	class Exile_Plane_AN2_Stripe								{ quality = 2; price = 17000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Hatchback
 	///////////////////////////////////////////////////////////////////////////////
@@ -2380,7 +3015,7 @@ class CfgExileArsenal
 	class Exile_Car_Hatchback_Rusty1					{ quality = 3; price = 12000; };
 	class Exile_Car_Hatchback_Rusty2					{ quality = 3; price = 12000; };
 	class Exile_Car_Hatchback_Rusty3					{ quality = 3; price = 12000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Golf
 	///////////////////////////////////////////////////////////////////////////////
@@ -2409,7 +3044,7 @@ class CfgExileArsenal
 	class Exile_Car_Ural_Covered_Yellow			{ quality = 2; price = 28000; };
 	class Exile_Car_Ural_Covered_Worker			{ quality = 2; price = 28000; };
 	class Exile_Car_Ural_Covered_Military		{ quality = 2; price = 28000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// V3S
 	///////////////////////////////////////////////////////////////////////////////
@@ -2420,7 +3055,7 @@ class CfgExileArsenal
 	// SUVXL
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_SUVXL_Black 				{ quality = 3; price = 20000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Tractor
 	///////////////////////////////////////////////////////////////////////////////
@@ -2590,12 +3225,12 @@ class CfgExileArsenal
 	// SUV (Armed)
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_SUV_Armed_Black 					{ quality = 4; price = 25000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// BRDM2
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_BRDM2_HQ 							{ quality = 5; price = 25000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// BTR40
 	///////////////////////////////////////////////////////////////////////////////
@@ -2603,7 +3238,7 @@ class CfgExileArsenal
 	class Exile_Car_BTR40_MG_Camo 							{ quality = 6; price = 38000; };
 	class Exile_Car_BTR40_Green 							{ quality = 2; price = 15000; };
 	class Exile_Car_BTR40_Camo 								{ quality = 2; price = 15000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// HMMWV
 	///////////////////////////////////////////////////////////////////////////////
@@ -2615,14 +3250,14 @@ class CfgExileArsenal
 	class Exile_Car_HMMWV_MEV_Desert 							{ quality = 3; price = 21000; };
 	class Exile_Car_HMMWV_UNA_Green 							{ quality = 3; price = 21000; };
 	class Exile_Car_HMMWV_UNA_Desert 							{ quality = 3; price = 21000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Tempest
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Tempest 							{ quality = 4; price = 48300; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van 
+	// Van
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Black 							{ quality = 2; price = 12000; };
 	class Exile_Car_Van_White 							{ quality = 2; price = 12000; };
@@ -2637,7 +3272,7 @@ class CfgExileArsenal
 	class Exile_Car_Van_Guerilla08 						{ quality = 2; price = 12000; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van (Box) 
+	// Van (Box)
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Box_Black 						{ quality = 3; price = 17000; };
 	class Exile_Car_Van_Box_White 						{ quality = 3; price = 17000; };
@@ -2652,7 +3287,7 @@ class CfgExileArsenal
 	class Exile_Car_Van_Box_Guerilla08 					{ quality = 3; price = 17000; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// Van (Fuel) 
+	// Van (Fuel)
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Van_Fuel_Black 						{ quality = 3; price = 15000; };
 	class Exile_Car_Van_Fuel_White 						{ quality = 3; price = 15000; };
@@ -2665,45 +3300,45 @@ class CfgExileArsenal
 	// Zamak
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Zamak 								{ quality = 4; price = 43000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Water Scooter
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Boat_WaterScooter						{ quality = 2; price = 800; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// RHIB
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Boat_RHIB								{ quality = 3; price = 1500; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Ceaser BTT
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Plane_Ceasar							{ quality = 2; price = 15000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// V-44 X Blackfish
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Plane_BlackfishInfantry							{ quality = 6; price = 60000; };
 	class Exile_Plane_BlackfishVehicle							{ quality = 6; price = 60000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Prowler
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_ProwlerLight							{ quality = 3; price = 22000; };
 	class Exile_Car_ProwlerUnarmed							{ quality = 3; price = 22000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Qilin
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_QilinUnarmed							{ quality = 3; price = 21000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// MB 4WD
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_MB4WD							{ quality = 2; price = 15000; };
 	class Exile_Car_MB4WDOpen							{ quality = 2; price = 15000; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Flags
 	///////////////////////////////////////////////////////////////////////////////
@@ -2882,6 +3517,40 @@ class CfgExileEnvironment
 			daytimeTemperature[] = {15.93,16.89,18.42,20.40,22.68,25.10,27.48,29.63,31.40,32.66,33.32,33.80,33.80,33.32,32.66,31.40,29.63,27.48,25.10,22.68,20.40,18.42,16.89,15.93,15.93};
 		};
 	};
+
+	class Malden: Altis
+	{
+		class FireFlies: FireFlies
+		{
+			enable = 1;
+		};
+
+		class Anomalies: Anomalies
+		{
+			enable = 0;
+		};
+
+		class Breathing: Breathing
+		{
+			enable = 0;
+		};
+
+		class Snow: Snow
+		{
+			enable = 0;
+		};
+
+		class Radiation: Radiation
+		{
+			enable = 0;
+		};
+
+		class Temperature: Temperature
+		{
+			daytimeTemperature[] = {15.93,16.89,18.42,20.40,22.68,25.10,27.48,29.63,31.40,32.66,33.32,33.80,33.80,33.32,32.66,31.40,29.63,27.48,25.10,22.68,20.40,18.42,16.89,15.93,15.93};
+		};
+	};
+	
 };
 class CfgExileHUD
 {
@@ -3055,6 +3724,59 @@ class CfgFlags
 		texture = "\A3\Data_F\Flags\flag_us_co.paa";
 		uids[] = {};
 	};
+};
+
+class CfgGrinding
+{
+	// Enables code lock grinding on the server
+	enableGrinding = 1;
+	
+	// Time it takes to grind a fresh lock in minutes
+	grindDuration = 25;
+	
+	// Percentage chance the grinding will fail
+	failChance = 25;
+	
+	// Percentage chance that failing will break your grinder (otherwise it will just remove a battery)
+	breakChance = 20;
+	
+	// Notify the entire server if someone is hacking. 1 == notify, 0 == don't notify
+	notifyServer = 1;
+	
+	// The cooldown time, in minutes, before another server side notification is sent out from a territory. This is on a per territory basis. 
+	notificationCooldown = 30;
+};
+class CfgHacking 
+{
+	// Enables safe hacking on the server
+	enableHacking = 1;
+	
+	// Time it takes to hack in minutes
+	hackDuration = 20;
+	
+	// Percentage chance the hacking will fail
+	failChance = 50;
+	
+	// Percentage chance the laptop will be removed on fail
+	removeChance = 5;
+	
+	// Max attepts to hack a safe during one restart
+	maxHackAttempts = 3;
+	
+	// Notify the entire server if someone is hacking. 1 == notify, 0 == don't notify
+	notifyServer = 1;
+	
+	// The cooldown time, in minutes, before another server side notification is sent out from a territory. This is on a per territory basis. 
+	notificationCooldown = 30;
+	
+	// The minimal amount of players on the server required in order to hack a safe (set to 0 to disable)
+	minPlayers = 1;
+	
+	// How many safe hacks are allowed to be going at one time
+	maxHacks = 5;
+	
+	// Show a map icon where the hacking is taking place
+	showMapIcon = 1;
 };
 
 class ExileAbstractAction
@@ -3234,7 +3956,7 @@ class CfgInteractionMenus
 	class Safe
 	{
 		targetType = 2;
-		target = "Exile_Container_Safe";
+		target = "Exile_Container_Abstract_Safe";
 
 		class Actions 
 		{
@@ -3272,6 +3994,13 @@ class CfgInteractionMenus
 				title = "Set PIN";
 				condition = "((ExileClientInteractionObject getvariable ['ExileIsLocked',1]) isEqualTo 0)";
 				action = "_this spawn ExileClient_object_lock_setPin";
+			};
+			
+			class HackLock: ExileAbstractAction
+			{
+				title = "Hack Lock";
+				condition = "(getNumber(missionConfigFile >> 'CfgHacking' >> 'enableHacking') isEqualTo 1) && ('Exile_Item_Laptop' in (magazines player)) && ((ExileClientInteractionObject getvariable ['ExileIsLocked',1]) isEqualTo -1) && !ExilePlayerInSafezone";
+				action = "['HackLock', _this select 0] call ExileClient_action_execute";
 			};
 		};
 	};
@@ -3318,6 +4047,29 @@ class CfgInteractionMenus
 				title = "Unmount";
 				condition = "!(isNull (attachedTo ExileClientInteractionObject)) && ((ExileClientInteractionObject getvariable ['ExileOwnerUID',1]) isEqualTo 1)";
 				action = "_this call ExileClient_object_supplyBox_unmount";
+			};
+		};
+	};
+	
+	class Drawbridge
+	{
+		targetType = 2;
+		target = "Exile_Construction_Abstract_DrawBridge";
+
+		class Actions
+		{
+			class Lower: ExileAbstractAction
+			{
+				title = "Lower";
+				condition = "ExileClientInteractionObject call ExileClient_object_construction_openBridgeShow";
+				action = "ExileClientInteractionObject animateSource ['DrawBridge_Source', 0];";
+			};
+			
+			class Raise: ExileAbstractAction
+			{
+				title = "Raise";
+				condition = "((ExileClientInteractionObject animationSourcePhase 'DrawBridge_Source') < 0.5)";
+				action = "ExileClientInteractionObject animateSource ['DrawBridge_Source', 2]";
 			};
 		};
 	};
@@ -3394,6 +4146,12 @@ class CfgInteractionMenus
 				action = "_this call ExileClient_object_construction_repair";
 			};
 
+			class GrindLock : ExileAbstractAction
+			{
+				title = "Grind Lock";
+				condition = "(getNumber(missionConfigFile >> 'CfgGrinding' >> 'enableGrinding') isEqualTo 1) && ('Exile_Item_Grinder' in (magazines player)) && ('Exile_Magazine_Battery' in (magazines player)) && ((ExileClientInteractionObject getvariable ['ExileIsLocked',1]) isEqualTo -1) && ((ExileClientInteractionObject animationPhase 'DoorRotation') < 0.5)";
+				action = "['GrindLock', _this select 0] call ExileClient_action_execute";
+			};
 		};
 	};
 
@@ -3422,7 +4180,7 @@ class CfgInteractionMenus
 			};
 		};
 	};
-
+	
 	class Flag
 	{
 		targetType = 2;
@@ -3568,6 +4326,22 @@ class CfgInteractionMenus
 				title = "Hide Body";
 				condition = "!(alive ExileClientInteractionObject) && ('Exile_Melee_Shovel' isEqualTo (currentWeapon player))";
 				action = "['HideBody', (_this select 0)] call ExileClient_action_execute";
+			};
+		};
+	};
+	
+	class Animal
+	{
+		targetType = 2;
+		target = "Exile_Animal_Abstract";
+
+		class Actions 
+		{			
+			class Gut: ExileAbstractAction
+			{
+				title = "Gut Animal";
+				condition = "!(alive ExileClientInteractionObject) && (ExileClientInteractionObject getVariable ['CanBeGutted', false])";
+				action = "['GutAnimal', ExileClientInteractionObject] call ExileClient_action_execute";
 			};
 		};
 	};
@@ -3770,7 +4544,59 @@ class CfgPlayer
 	enableStamina = 0;
 
 	disableMapDrawing = 1;
+	
+	// Use the current gradient to affect the players movement when autorunning.
+	// 0 == default exile auto run
+	useGradientAffectedAutoRun = 0;
 };
+/*
+	This config will allow you to override the default poptab storage for vehicles and containers. 
+	The current system takes the maxLoad of a vehicle * 10, and that gives you the max poptabs that can be stored.
+	This will allow you to override that max with your own value.
+	
+	To override, just add the vehicle/containers classname to this class, and define its max. Look at Exile_Container_Safe_Small as an example.
+*/
+class CfgPoptabStorage
+{
+	class Exile_Container_Safe_Small { max = 25000; };	
+};
+class CfgSimulation
+{
+	/*
+		Use Arma built in Dynamic Simulation. 
+		If you have any issues with players unable to get into cars, control vehicles, fly planes, etc. try turning this off
+		Options:
+			0: Use Exile's built in simulation system (Same system in 1.0.3 and below)
+			1: Use Dynamic Simulation
+	*/
+	enableDynamicSimulation = 1;
+	
+	/*
+		Simulation distance settings
+		For more information:
+			https://community.bistudio.com/wiki/setDynamicSimulationDistance
+			https://community.bistudio.com/wiki/setDynamicSimulationDistanceCoef
+	*/
+	
+	// The distance, in meters, will infantry units be simulated. Default: 500m
+	groupSimulationDistance = 500;
+	
+	// The distance, in meters, will vehicles with crew be simulated. Default: 350m
+	vehicleSimulationDistance = 250;
+	
+	// The distance, in meters, will all vehicles without crew be simulated. Default: 250m
+	emptyVehicleSimulationDistance = 250;
+	
+	// The distance, in meters, will static objects be simulated. This includes anything from a small tin can to a building. Default: 50m
+	propSimulationDistance = 50;
+	
+	// Multiplies the entity activation distance by set value if the entity is moving. Default: 2
+	isMovingSimulationCoef = 2;
+};
+
+
+
+
 class CfgSlothMachine
 {
 	spinCost = 100;
@@ -3867,14 +4693,19 @@ class CfgTerritories
 
 	// Amount of pop tabs per object to pay
 	popTabAmountPerObject = 10;
+
+	// Amount of minutes building is disabled after a charge has been planted
+	// in a territory. This basically prevents people from placing tons of walls
+	// or removing walls while their territory is under attack.
+	constructionBlockDuration = 5;
 };
-class CfgTraderCategories 
+class CfgTraderCategories
 {
 	class Community
 	{
 		name = "Community Items";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3884,7 +4715,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 2";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3894,7 +4725,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 3";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3904,7 +4735,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 4";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3914,7 +4745,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 5";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3924,7 +4755,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 6";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3934,7 +4765,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 7";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3944,7 +4775,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 8";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3954,7 +4785,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 9";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3964,7 +4795,7 @@ class CfgTraderCategories
 	{
 		name = "Community Items 10";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			// Add your items here <3
 		};
@@ -3974,7 +4805,7 @@ class CfgTraderCategories
 	{
 		name = "Uniforms";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"U_C_Journalist",
 			"U_C_Poloshirt_blue",
@@ -4094,7 +4925,7 @@ class CfgTraderCategories
 	{
 		name = "Vests";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\vest_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"V_Press_F",
 			"V_Rangemaster_belt",
@@ -4151,11 +4982,19 @@ class CfgTraderCategories
 			"V_BandollierB_ghex_F",
 			"V_TacVest_gen_F",
 			"V_PlateCarrier1_rgr_noflag_F",
-			"V_PlateCarrier2_rgr_noflag_F"
+			"V_PlateCarrier2_rgr_noflag_F",
+			// Jets
+			"V_DeckCrew_yellow_F",
+			"V_DeckCrew_blue_F",
+			"V_DeckCrew_green_F",
+			"V_DeckCrew_red_F",
+			"V_DeckCrew_white_F",
+			"V_DeckCrew_brown_F",
+			"V_DeckCrew_violet_F"
 		};
 	};
 
-	class Headgear 
+	class Headgear
 	{
 		name = "Headgear";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\headgear_ca.paa";
@@ -4265,6 +5104,7 @@ class CfgTraderCategories
 			"H_PilotHelmetHeli_B",
 			"H_PilotHelmetHeli_I",
 			"H_PilotHelmetHeli_O",
+
 			//Apex
 			"H_Helmet_Skate",
 			"H_HelmetB_TI_tna_F",
@@ -4289,7 +5129,7 @@ class CfgTraderCategories
 		};
 	};
 
-class Glasses 
+	class Glasses
 	{
 		name = "Glasses";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\Goggles_ca.paa";
@@ -4343,22 +5183,22 @@ class Glasses
 		};
 	};
 
-	class PointerAttachments 
+	class PointerAttachments
 	{
 		name = "Pointer Attachments";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"acc_flashlight",
 			"acc_pointer_IR"
 		};
 	};
 
-	class BipodAttachments 
+	class BipodAttachments
 	{
 		name = "Bipod Attachments";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itembipod_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"bipod_01_F_blk",
 			"bipod_01_F_mtp",
@@ -4373,11 +5213,11 @@ class Glasses
 		};
 	};
 
-	class MuzzleAttachments 
+	class MuzzleAttachments
 	{
 		name = "Suppressor Attachments";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemmuzzle_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"muzzle_snds_338_black",
 			"muzzle_snds_338_green",
@@ -4412,7 +5252,7 @@ class Glasses
 	{
 		name = "Unmanned Aerial Vehicles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\gps_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"I_UavTerminal",
 			"I_UAV_01_backpack_F"
@@ -4423,7 +5263,7 @@ class Glasses
 	{
 		name = "Static Machine Guns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"O_HMG_01_support_F",
 			//"O_HMG_01_support_high_F", // Does not seem to work with HMG01, only the lower version does
@@ -4431,11 +5271,11 @@ class Glasses
 		};
 	};
 
-	class OpticAttachments 
+	class OpticAttachments
 	{
 		name = "Scopes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemoptic_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"optic_Aco",
 			"optic_ACO_grn",
@@ -4479,13 +5319,13 @@ class Glasses
 		};
 	};
 
-	class Hardware 
+	class Hardware
 	{
 		name = "Hardware";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
-			
+
 			"Exile_Item_DuctTape",
 			"Exile_Item_ExtensionCord",
 			"Exile_Item_FuelCanisterEmpty",
@@ -4495,11 +5335,11 @@ class Glasses
 			"Exile_Item_MetalPole",
 			"Exile_Item_SafeKit",
 			"Exile_Item_CamoTentKit",
-			"Exile_Item_CodeLock"
-			
+			"Exile_Item_CodeLock",
+			"Exile_Item_MetalScrews"
+
 			/*
 			--Not for Sale--
-			"Exile_Item_MetalScrews",
 			"Exile_Item_MetalWire",
 			"Exile_Item_Laptop",
 			"Exile_Item_BaseCameraKit",
@@ -4508,6 +5348,11 @@ class Glasses
 			"Exile_Item_Sand",
 			"Exile_Item_MobilePhone",
 			--Unused--
+			"Exile_Item_SprayCan_Black",
+			"Exile_Item_SprayCan_Red",
+			"Exile_Item_SprayCan_Green",
+			"Exile_Item_SprayCan_White",
+			"Exile_Item_SprayCan_Blue",
 			"Exile_Item_CordlessScrewdriver",
 			"Exile_Item_FireExtinguisher",
 			"Exile_Item_OilCanister",
@@ -4521,13 +5366,13 @@ class Glasses
 		};
 	};
 
-	class Food 
+	class Food
 	{
 		name = "Fast Food";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] =
 		{
-			"Exile_Item_EMRE",		
+			"Exile_Item_EMRE",
 			"Exile_Item_GloriousKnakworst",
 			"Exile_Item_Surstromming",
 			"Exile_Item_SausageGravy",
@@ -4543,10 +5388,70 @@ class Glasses
 			"Exile_Item_Raisins",
 			"Exile_Item_Moobar",
 			"Exile_Item_InstantCoffee"
+			
+			// Hunted Animals
+			// Note: Adding these to the trader will defeat the purpose of hunting!
+			/*
+			"Exile_Item_SheepSteak_Cooked",
+			"Exile_Item_AlsatianSteak_Cooked",
+			"Exile_Item_CatSharkFilet_Cooked",
+			"Exile_Item_FinSteak_Cooked",
+			"Exile_Item_GoatSteak_Cooked",
+			"Exile_Item_TurtleFilet_Cooked",
+			"Exile_Item_TunaFilet_Cooked",
+			"Exile_Item_RabbitSteak_Cooked",
+			"Exile_Item_ChickenFilet_Cooked",
+			"Exile_Item_RoosterFilet_Cooked",
+			"Exile_Item_MulletFilet_Cooked",
+			"Exile_Item_SalemaFilet_Cooked",
+			"Exile_Item_MackerelFilet_Cooked",
+			"Exile_Item_OrnateFilet_Cooked",
+			"Exile_Item_SnakeFilet_Cooked",
+			"Exile_Item_CatSharkFilet_Raw",
+			"Exile_Item_TunaFilet_Raw",
+			"Exile_Item_AlsatianSteak_Raw",
+			"Exile_Item_TurtleFilet_Raw",
+			"Exile_Item_SheepSteak_Raw",
+			"Exile_Item_FinSteak_Raw",
+			"Exile_Item_GoatSteak_Raw",
+			"Exile_Item_ChickenFilet_Raw",
+			"Exile_Item_RoosterFilet_Raw",
+			"Exile_Item_MackerelFilet_Raw",
+			"Exile_Item_MulletFilet_Raw",
+			"Exile_Item_OrnateFilet_Raw",
+			"Exile_Item_RabbitSteak_Raw",
+			"Exile_Item_SalemaFilet_Raw",
+			"Exile_Item_SnakeFilet_Raw"
+			*/
 		};
 	};
+	
+	class NonVeganFood
+	{
+		name = "Non-Vegan Food";
+		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
+		items[] =
+		{
+			"Exile_Item_CatSharkFilet_Raw",
+			"Exile_Item_TunaFilet_Raw",
+			"Exile_Item_AlsatianSteak_Raw",
+			"Exile_Item_TurtleFilet_Raw",
+			"Exile_Item_SheepSteak_Raw",
+			"Exile_Item_FinSteak_Raw",
+			"Exile_Item_GoatSteak_Raw",
+			"Exile_Item_ChickenFilet_Raw",
+			"Exile_Item_RoosterFilet_Raw",
+			"Exile_Item_MackerelFilet_Raw",
+			"Exile_Item_MulletFilet_Raw",
+			"Exile_Item_OrnateFilet_Raw",
+			"Exile_Item_RabbitSteak_Raw",
+			"Exile_Item_SalemaFilet_Raw",
+			"Exile_Item_SnakeFilet_Raw"
+		};
+	};
+	
 
-	class Drinks 
+	class Drinks
 	{
 		name = "Drinks";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
@@ -4567,7 +5472,7 @@ class Glasses
 	{
 		name = "Tools";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Item_Matches",
 			"Exile_Item_CookingPot",
@@ -4585,9 +5490,13 @@ class Glasses
 			"Exile_Item_Screwdriver",
 			"Exile_Item_Shovel",
 			"Exile_Item_Wrench",
-			"Exile_Item_SleepingMat",	
-			"Exile_Item_ToiletPaper",			
+			"Exile_Item_SleepingMat",
+			"Exile_Item_ToiletPaper",
 			"Exile_Item_ZipTie",
+			"Exile_Item_BurlapSack",
+			"Exile_Item_Bullets_556",
+			"Exile_Item_Bullets_762",
+			"Exile_Item_WeaponParts",
 			*/
 
 			"Binocular",
@@ -4597,21 +5506,13 @@ class Glasses
 			"Laserdesignator_02",
 			"Laserdesignator_03",
 			*/
-			"NVGoggles",
-			"NVGoggles_INDEP",
-			"NVGoggles_OPFOR",
+			
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
 			"ItemRadio",
 			"ItemWatch",
-			"Exile_Item_XM8",
-			
-			//Apex
-			"O_NVGoggles_hex_F",
-			"O_NVGoggles_urb_F",
-			"O_NVGoggles_ghex_F",
-			"NVGoggles_tna_F"
+			"Exile_Item_XM8"			
 		};
 	};
 
@@ -4619,7 +5520,7 @@ class Glasses
 	{
 		name = "FirstAid";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Item_InstaDoc",
 			"Exile_Item_Bandage",
@@ -4635,7 +5536,7 @@ class Glasses
 	{
 		name = "Special Environment";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"B_Parachute",
 			"V_RebreatherB",
@@ -4645,7 +5546,14 @@ class Glasses
 			"G_Diving",
 			"G_B_Diving",
 			"G_O_Diving",
-			"G_I_Diving"			
+			"G_I_Diving",
+			"NVGoggles",
+			"NVGoggles_INDEP",
+			"NVGoggles_OPFOR",
+			"O_NVGoggles_hex_F",
+			"O_NVGoggles_urb_F",
+			"O_NVGoggles_ghex_F",
+			"NVGoggles_tna_F"
 		};
 	};
 
@@ -4653,7 +5561,7 @@ class Glasses
 	{
 		name = "Backpacks";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"B_AssaultPack_blk",
 			"B_AssaultPack_cbr",
@@ -4713,7 +5621,7 @@ class Glasses
 	{
 		name = "Ammunition";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\CargoMag_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"100Rnd_65x39_caseless_mag",
 			"100Rnd_65x39_caseless_mag_Tracer",
@@ -4804,17 +5712,26 @@ class Glasses
 			"200Rnd_556x45_Box_Tracer_Red_F",
 			"10Rnd_9x21_Mag",
 			"Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag",
+			"Exile_Magazine_5Rnd_127x108_APDS_Bullet_Cam_Mag",
 			"Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag",
 			"Exile_Magazine_7Rnd_408_Bullet_Cam_Mag",
-			"Exile_Magazine_10Rnd_338_Bullet_Cam_Mag"
+			"Exile_Magazine_10Rnd_338_Bullet_Cam_Mag",
+			"Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag",
+			"Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag",
+			"Exile_Magazine_5Rnd_127x108_APDS_KSVK_Bullet_Cam_Mag",
+			"Exile_Magazine_10Rnd_765x17_SA61",
+			"Exile_Magazine_20Rnd_765x17_SA61",
+			"Exile_Magazine_10Rnd_127x99_m107",
+			"Exile_Magazine_5Rnd_127x108_APDS_KSVK",
+			"Exile_Magazine_5Rnd_127x108_KSVK"
 		};
 	};
 
-	class Flares 
+	class Flares
 	{
 		name = "Flares";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Chemlight_blue",
 			"Chemlight_green",
@@ -4834,11 +5751,11 @@ class Glasses
 		};
 	};
 
-	class Smokes 
+	class Smokes
 	{
 		name = "Smokes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"SmokeShell",
 			"SmokeShellBlue",
@@ -4862,13 +5779,13 @@ class Glasses
 			"3Rnd_SmokeRed_Grenade_shell",
 			"3Rnd_SmokeYellow_Grenade_shell"
 		};
-	};	
+	};
 
 	class Explosives
 	{
 		name = "Explosives";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargothrow_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"HandGrenade",
 			"MiniGrenade",
@@ -4891,11 +5808,11 @@ class Glasses
 		};
 	};
 
-	class Pistols 
+	class Pistols
 	{
 		name = "Pistols";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"hgun_ACPC2_F",
 			"hgun_P07_F",
@@ -4909,15 +5826,16 @@ class Glasses
 			"Exile_Weapon_TaurusGold",
 			//Apex
 			"hgun_Pistol_01_F",
-			"hgun_P07_khk_F"
+			"hgun_P07_khk_F",
+			"Exile_Weapon_SA61"
 		};
 	};
 
-	class SubMachineGuns 
+	class SubMachineGuns
 	{
 		name = "Sub Machine Guns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"hgun_PDW2000_F",
 			"SMG_01_F",
@@ -4926,11 +5844,11 @@ class Glasses
 		};
 	};
 
-	class LightMachineGuns 
+	class LightMachineGuns
 	{
 		name = "Light Machine Guns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"arifle_MX_SW_Black_F",
 			"arifle_MX_SW_F",
@@ -4955,7 +5873,7 @@ class Glasses
 	{
 		name = "Assault Rifles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"arifle_Katiba_C_F",
 			"arifle_Katiba_F",
@@ -5006,22 +5924,25 @@ class Glasses
 			"arifle_SPAR_01_GL_snd_F",
 			"arifle_SPAR_02_blk_F",
 			"arifle_SPAR_02_khk_F",
-			"arifle_SPAR_02_snd_F",			
+			"arifle_SPAR_02_snd_F",
 			"arifle_SPAR_03_blk_F",
 			"arifle_SPAR_03_khk_F",
 			"arifle_SPAR_03_snd_F",
 			"arifle_MX_khk_F",
 			"arifle_MX_GL_khk_F",
 			"arifle_MXC_khk_F",
-			"arifle_MXM_khk_F"
+			"arifle_MXM_khk_F",
+			"Exile_Weapon_M4",
+			"Exile_Weapon_M16A4",
+			"Exile_Weapon_M16A2"
 		};
 	};
-	
+
 	class Shotguns
 	{
 		name = "Shotguns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Weapon_M1014"
 		};
@@ -5031,7 +5952,7 @@ class Glasses
 	{
 		name = "Sniper Rifles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"arifle_MXM_Black_F",
 			"arifle_MXM_F",
@@ -5067,7 +5988,9 @@ class Glasses
 			"srifle_GM6_ghex_F",
 			"srifle_DMR_07_blk_F",
 			"srifle_DMR_07_hex_F",
-			"srifle_DMR_07_ghex_F"
+			"srifle_DMR_07_ghex_F",
+			"Exile_Weapon_m107",
+			"Exile_Weapon_ksvk"
 		};
 	};
 
@@ -5075,7 +5998,7 @@ class Glasses
 	{
 		name = "Bikes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Bike_OldBike",
 			"Exile_Bike_MountainBike"
@@ -5086,7 +6009,7 @@ class Glasses
 	{
 		name = "Cars";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Car_Kart_Black",
 			"Exile_Bike_QuadBike_Black",
@@ -5135,7 +6058,7 @@ class Glasses
 	{
 		name = "Trucks";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Car_Van_Black",
 			"Exile_Car_Van_Box_Black",
@@ -5154,7 +6077,7 @@ class Glasses
 	{
 		name = "Helicopters";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Chopper_Hummingbird_Green",
 			"Exile_Chopper_Hummingbird_Civillian_Wasp",
@@ -5174,7 +6097,7 @@ class Glasses
 	{
 		name = "Boats";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Boat_RubberDuck_CSAT",
 			"Exile_Boat_RubberDuck_Digital",
@@ -5196,7 +6119,7 @@ class Glasses
 	{
 		name = "Planes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"Exile_Plane_Cessna",
 			"Exile_Plane_AN2_Green",
@@ -5206,11 +6129,11 @@ class Glasses
 		};
 	};
 
-	class Diving 
+	class Diving
 	{
 		name = "Diving";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
-		items[] = 
+		items[] =
 		{
 			"G_B_Diving",
 			"G_O_Diving",
@@ -5296,7 +6219,8 @@ class CfgTraders
 		categories[] = 
 		{
 			"Food",
-			"Drinks"
+			"Drinks",
+			"NonVeganFood"
 		};
 	};
 
@@ -5883,12 +6807,20 @@ class CfgVehicleCustoms
 	// SUV XL
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_SUVXL_Abstract
-	{
-		skins[] =
-		{
-			{"Exile_Car_SUVXL_Black", 100, "Black", {""}}
-		};
-	};
+    {
+        skins[] = 
+        {
+            {"Exile_Car_SUVXL_Black", 100, "Black", {"\Exile_psycho_SUV_a3\Data\suv_body_co.paa"}},
+            {"Exile_Car_SUVXL_Black", 150, "Blue White", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_bluewhite.paa"}},
+            {"Exile_Car_SUVXL_Black", 150, "Charcoal", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_charcoal_co.paa"}},
+            {"Exile_Car_SUVXL_Black", 150, "Orange", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_orange_co.paa"}},
+            {"Exile_Car_SUVXL_Black", 200, "Hello Kitty", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_Pink_hello_co.paa"}},
+            {"Exile_Car_SUVXL_Black", 150, "Red", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_red_co.paa"}},
+            {"Exile_Car_SUVXL_Black", 150, "Silver", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_silver_co.paa"}},
+            {"Exile_Car_SUVXL_Black", 100, "White", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_white_co.paa"}},
+            {"Exile_Car_SUVXL_Black", 150, "Yellow", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_yellow_co.paa"}}
+        };
+    };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Van
@@ -6324,6 +7256,494 @@ class CfgVehicleTransport
 			attachPosition[] = {0.08, -0.85, 0.4};
 			cargoIndizes[] = {1, 6, 7, 9}; 
 			detachPosition[] = {0.08, -6};
+		};
+	};
+};
+class CfgVirtualGarage
+{
+	/*
+		Enable or disable virtual garage on the server
+		Options:
+			0: Disable virtual garage
+			1: Enable virtual garage
+	*/
+	enableVirtualGarage = 1;	
+	
+	/*
+		Enables or disables the ability to access virtual garage while in combat
+		Options:
+			0: Players cannot access virtual garage while they are in combat
+			1: Players can access virtual garage when they are in combat
+	*/
+	canAccessGarageInCombat = 0;
+	
+	/*
+		When enabled, this will dump any items and money from the vehicle onto the ground where the car was.
+		Options:
+			0: Do not clear inventory and money
+			1: Clear inventory and money
+	*/
+	clearInventoryOnStore = 1;
+	
+	/*
+		The maximum number of vehicles that can be stored in the VG for that territory.
+		Use -1 to disable the ability to store vehicles at that level.
+		Make sure to have the same number of levels here as you do in CfgTerritories!
+	*/
+	numberOfVehicles[] = 
+	{
+		-1,			// Level 1
+		5, 			// Level 2 
+		8, 			// Level 3
+		11, 		// Level 4
+		13, 		// Level 5
+		15, 		// Level 6
+		18, 		// Level 7
+		21, 		// Level 8
+		25, 		// Level 9
+		28 			// Level 10
+	};
+	
+	/*
+		The allowed types of vehicles that can be stored in the garage	
+		Available Types: "Car", "Tank", "Plane", "Air", "Ship", "Submarine"
+	*/
+	allowedVehicleTypes[] = {"Car","Tank","Plane","Air","Ship","Submarine"};
+};
+class CfgXM8 
+{
+	class settings
+	{
+		controlID = 4070;
+		appID = "App01";
+		title = "Settings";
+	};
+	
+	class healthScanner
+	{
+		controlID = 4120;
+		appID = "App02";
+		title = "Health Scanner";
+	};
+	
+	class slothMachine
+	{
+		controlID = 4140;
+		appID = "App03";
+		title = "Sloth Machine";
+	};
+};
+/*
+	XM8 Extra apps, the Exile way of doing it
+	
+	Here is an example app layout:
+	class XM8_App01_Button: RscExileXM8AppButton1x1
+	{
+	    textureNoShortcut = "";  	// Path to picture. This can be via mission file or client side PBO
+	    text = "";					// The name of the app to be display on the button
+	    onButtonClick = "";			// The code to fire when the app is clicked
+	    resource = "";				// The name of the resource to load for the app, leave as an empty string if you just want to run code without a GUI, like BOOM or spawning a bike
+	};
+*/
+
+class XM8_App01_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "\exile_assets\texture\ui\xm8_app_settings_ca.paa";
+    text = "Settings";
+    onButtonClick = "['settings', 0] call ExileClient_gui_xm8_slide";
+    resource = "XM8SlideSettings";
+};
+
+class XM8_App02_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "\exile_assets\texture\ui\xm8_app_health_scanner_ca.paa";
+    text = "Health Scanner";
+    onButtonClick = "['healthScanner', 0] call ExileClient_gui_xm8_slide";
+    resource = "XM8SlideHealthScanner";
+};
+
+class XM8_App03_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "\exile_assets\texture\ui\xm8_app_slothMachine_ca.paa";
+    text = "Sloth Machine";
+    onButtonClick = "['slothMachine', 0] call ExileClient_gui_xm8_slide";
+    resource = "XM8SlideSlothMachine";
+};
+
+class XM8_App04_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "\exile_assets\texture\ui\xm8_app_boom_ca.paa";
+    text = "BOOM!";
+    onButtonClick = "call ExileClient_system_breaching_detonate";
+    resource = "";
+};
+
+class XM8_App05_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App06_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App07_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App08_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App09_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App10_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App11_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App12_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App13_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+class XM8_App14_Button: RscExileXM8AppButton1x1
+{
+    textureNoShortcut = "";
+    text = "";
+    onButtonClick = "";
+    resource = "";
+};
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//											   BELOW IS WHERE ALL THE XM8 APP RESOURCES CAN GO
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class XM8SlideSettings: RscExileXM8Slide 
+{
+	idc = 4070;
+	class Controls 
+	{
+		class GoBackButton: RscExileXM8ButtonMenu
+		{
+			idc = 4071;
+			text = "GO BACK"; 
+			x = (30 - 3) * (0.025);
+			y = (19 - 2) * (0.04);
+			w = 6 * (0.025);
+			h = 1 * (0.04);
+			onButtonClick = "['extraApps', 1] call ExileClient_gui_xm8_slide";
+		};
+
+		class 8GDropDown: RscExileXM8Combo
+		{
+			idc = 4072;
+			x = (5 - 3) * (0.025);
+			y = (5 - 2) * (0.04);
+			w = 7 * (0.025);
+			h = 1 * (0.04);
+			onLBSelChanged = "_this call ExileClient_gui_xm8_slide_settings_event_on8GSelectionChanged";
+		};
+
+		class 8GLabel: RscExileXM8Text
+		{
+			idc = -1;
+			text = "Show my device in global 8G network."; 
+			x = (13 - 3) * (0.025);
+			y = (5 - 2) * (0.04);
+			w = 22 * (0.025);
+			h = 1 * (0.04);
+			shadow = 0;
+		};
+
+		class SoundDropDown: RscExileXM8Combo
+		{
+			idc = 4075;
+			x = (5 - 3) * (0.025);
+			y = (7 - 2) * (0.04);
+			w = 7 * (0.025);
+			h = 1 * (0.04);
+			onLBSelChanged = "_this call ExileClient_gui_xm8_slide_settings_event_onSoundSelectionChanged";
+		};
+
+		class SoundLabel: RscExileXM8Text
+		{
+			idc = -1;
+			text = "Play a beep sound on notifications."; 
+			x = (13 - 3) * (0.025);
+			y = (7 - 2) * (0.04);
+			w = 22 * (0.025);
+			h = 1 * (0.04);
+			shadow = 0;
+		};
+
+		class PartyEspDropDown: RscExileXM8Combo
+		{
+			idc = 4076;
+			x = (5 - 3) * (0.025);
+			y = (9 - 2) * (0.04);
+			w = 7 * (0.025);
+			h = 1 * (0.04);
+			onLBSelChanged = "_this call ExileClient_gui_xm8_slide_settings_event_onPartyEspSelectionChanged";
+		};
+
+		class PartyEspLabel: RscExileXM8Text
+		{
+			idc = -1;
+			text = "Color of 3D party icons and name tags."; 
+			x = (13 - 3) * (0.025);
+			y = (9 - 2) * (0.04);
+			w = 22 * (0.025);
+			h = 1 * (0.04);
+			shadow = 0;
+		};
+
+		class PartyEspSlider: RscExileXM8XSliderH
+		{
+			idc = 4078;
+			x = (5 - 3) * (0.025);
+			y = (11 - 2) * (0.04);
+			w = 7 * (0.025);
+			h = 1 * (0.04);
+			onSliderPosChanged = "_this call ExileClient_gui_xm8_slide_settings_event_onPartyEspSliderChanged";
+		};
+
+		class PartyEspSliderLabel: RscExileXM8Text
+		{
+			idc = -1;
+			text = "Opacity of 3D party icons and name tags."; 
+			x = (13 - 3) * (0.025);
+			y = (11 - 2) * (0.04);
+			w = 22 * (0.025);
+			h = 1 * (0.04);
+			shadow = 0;
+		};
+
+		class PartyMarkerSlider: RscExileXM8XSliderH
+		{
+			idc = 4079;
+			x = (5 - 3) * (0.025);
+			y = (13 - 2) * (0.04);
+			w = 7 * (0.025);
+			h = 1 * (0.04);
+			onSliderPosChanged = "_this call ExileClient_gui_xm8_slide_settings_event_onPartyMarkerSliderChanged";
+		};
+
+		class PartyMarkerSliderLabel: RscExileXM8Text
+		{
+			idc = -1;
+			text = "Opacity of 3D party markers."; 
+			x = (13 - 3) * (0.025);
+			y = (13 - 2) * (0.04);
+			w = 22 * (0.025);
+			h = 1 * (0.04);
+			shadow = 0;
+		};
+
+		class StreamModeDropDown: RscExileXM8Combo
+		{
+			idc = 4077;
+			x = (5 - 3) * (0.025);
+			y = (15 - 2) * (0.04);
+			w = 7 * (0.025);
+			h = 1 * (0.04);
+			onLBSelChanged = "_this call ExileClient_gui_xm8_slide_settings_event_onStreamModeSelectionChanged";
+		};
+
+		class StreamModeLabel: RscExileXM8Text
+		{
+			idc = -1;
+			text = "Masquerade PIN codes. Perfect for streamers."; 
+			x = (13 - 3) * (0.025);
+			y = (15 - 2) * (0.04);
+			w = 22 * (0.025);
+			h = 1 * (0.04);
+			shadow = 0;
+		};
+	};
+};
+
+class XM8SlideHealthScanner: RscExileXM8Slide
+{
+	idc = 4120;
+	class Controls 
+	{
+		class GoBackButton: RscExileXM8ButtonMenu
+		{
+			idc = 4122;
+			text = "GO BACK"; 
+			x = (30 - 3) * (0.025);
+			y = (19 - 2) * (0.04);
+			w = 6 * (0.025);
+			h = 1 * (0.04);
+			onButtonClick = "['extraApps', 1] call ExileClient_gui_xm8_slide";
+		};
+
+		class HealthInfoControlGroup: RscExileXM8ControlsGroupNoHScrollbars
+		{
+			idc = -1;
+			x = (5 - 3) * (0.025);
+			y = (5 - 2) * (0.04);
+			w = 30 * (0.025);
+			h = 15 * (0.04);
+			colorBackground[] = {0,0,0,0.25};
+
+			class controls
+			{
+				class HealthInfo: RscExileXM8StructuredText
+				{
+					idc = 4121;
+					x = 0;
+					y = 0;
+					w = 29 * (0.025); // minus 1!
+					h = 15 * (0.04);
+				};
+			};
+		};
+	};
+};
+
+class XM8SlideSlothMachine: RscExileXM8Slide
+{
+	idc = 4140;
+	class Controls 
+	{
+		class Background: RscExileXM8PictureKeepAspect
+		{
+			idc = -1;
+			text = "\exile_assets\texture\ui\slothMachine\xm8_slothMachineBackground.paa";
+			x = -3.1 * (0.025) + (0);
+			y = -6 * (0.04) + (0);
+			w = 40 * (0.025);
+			h = 33 * (0.04);
+		};
+		
+		class XM8SlothMachineSpinButton: RscExileXM8PictureButton
+		{
+			idc = 4141;
+			style = 0x30;
+			x = 14.3 * (0.025) + (0);
+			y = 15.9 * (0.04) + (0);
+			w = 5.7 * (0.025);
+			h = 2 * (0.04);
+			text = "\exile_assets\texture\ui\slothMachine\button_off_ca.paa";
+			action = "[] call ExileClient_gui_xm8_slide_slothMachine_event_onSpinButtonClick;";
+		};
+		
+		class GoBackButton: RscExileXM8ButtonMenu
+		{
+			idc = 4148;
+			text = "GO BACK"; 
+			x = (30 - 3) * (0.025);
+			y = (19 - 2) * (0.04);
+			w = 6 * (0.025);
+			h = 1 * (0.04);
+			sizeEx = .9 * (0.04);
+			onButtonClick = "['extraApps', 1] call ExileClient_gui_xm8_slide";
+		};
+		
+		class PopTabsLabel: RscExileXM8StructuredText
+		{
+			idc = 4142;
+			text = "<t align='center'><t color='#e14141'><img image='\exile_assets\texture\ui\poptab_inline_ca.paa' size='1' shadow='true' /></t>";
+			x = 6.5 * (0.025) + (0);
+			y = 13 * (0.04) + (0);
+			w = 6 * (0.025);
+			h = 2 * (0.04);
+		};
+		
+		class JackpotLabel: RscExileXM8StructuredText
+		{
+			idc = 4143;
+			text = "<t align='center'><t color='#e14141'></t>";
+			x = 14 * (0.025) + (0);
+			y = 13 * (0.04) + (0);
+			w = 6 * (0.025);
+			h = 2 * (0.04);
+		};
+		
+		class WinningsLabel: RscExileXM8StructuredText
+		{
+			idc = 4144;
+			text = "<t align='center'><t color='#e14141'>0</t>";
+			x = 21.5 * (0.025) + (0);
+			y = 13 * (0.04) + (0);
+			w = 6 * (0.025);
+			h = 2 * (0.04);
+		};
+		
+		class Symbol01: RscExileXM8PictureKeepAspect
+		{
+			idc = 4145;
+			text = "";
+			x = 6.55 * (0.025) + (0);
+			y = 4 * (0.04) + (0);
+			w = 5.83 * (0.025);
+			h = 5 * (0.04);
+		};
+		
+		class Symbol02: RscExileXM8PictureKeepAspect
+		{
+			idc = 4146;
+			text = "";
+			x = 14.1 * (0.025) + (0);
+			y = 4 * (0.04) + (0);
+			w = 5.83 * (0.025);
+			h = 5 * (0.04);
+		};
+		
+		class Symbol03: RscExileXM8PictureKeepAspect
+		{
+			idc = 4147;
+			text = "";
+			x = 21.6 * (0.025) + (0);
+			y = 4 * (0.04) + (0);
+			w = 5.83 * (0.025);
+			h = 5 * (0.04);
 		};
 	};
 };
