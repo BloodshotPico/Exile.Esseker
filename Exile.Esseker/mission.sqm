@@ -392,7 +392,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=235;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.77243;
@@ -408,7 +410,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=236;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.52971;
@@ -424,7 +428,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=237;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.3595;
@@ -440,7 +446,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=238;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.15059;
@@ -456,7 +464,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=239;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.22704;
@@ -472,7 +482,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=240;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.39975;
@@ -488,7 +500,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=241;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.53632;
@@ -504,7 +518,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=242;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.30736;
@@ -520,7 +536,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=243;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.26634;
@@ -536,7 +554,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=244;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.39139;
@@ -552,7 +572,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=245;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.45;
@@ -568,7 +590,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=246;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.69014;
@@ -584,7 +608,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=247;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.02791;
@@ -600,7 +626,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=248;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.86241;
@@ -616,7 +644,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=249;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.45689;
@@ -632,7 +662,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=250;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.30522;
@@ -648,7 +680,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=251;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.22403;
@@ -664,7 +698,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=252;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.2917;
@@ -680,7 +716,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=253;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.48265;
@@ -696,7 +734,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=254;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.77176;
@@ -712,7 +752,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=255;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.69025;
@@ -728,7 +770,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=256;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.13377;
@@ -744,7 +788,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=257;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.06851;
@@ -760,7 +806,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=258;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.03131;
@@ -776,7 +824,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=259;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.27226;
@@ -792,7 +842,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=260;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.66389;
@@ -808,7 +860,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=261;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.98682;
@@ -824,7 +878,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=262;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.48909;
@@ -840,7 +896,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=263;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.92542;
@@ -856,7 +914,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=264;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.90503;
@@ -872,7 +932,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=265;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.85495;
@@ -888,7 +950,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=266;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.20778;
@@ -904,7 +968,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=267;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.64014;
@@ -920,7 +986,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=268;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.12195;
@@ -936,7 +1004,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=269;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.8203;
@@ -952,7 +1022,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=270;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.91759;
@@ -968,7 +1040,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=271;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.12811;
@@ -984,7 +1058,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=272;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.33426;
@@ -1000,7 +1076,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=273;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.42451;
@@ -1016,7 +1094,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=274;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.94807;
@@ -1032,7 +1112,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=275;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.94028;
@@ -1048,7 +1130,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=276;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.8725;
@@ -1064,7 +1148,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=277;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.82123;
@@ -1080,7 +1166,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=278;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-129.65617;
@@ -1096,7 +1184,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=279;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.6534;
@@ -1112,7 +1202,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=280;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.79393;
@@ -1128,7 +1220,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=281;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.78242;
@@ -1144,7 +1238,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=282;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.57216;
@@ -1160,7 +1256,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=283;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-130.52135;
@@ -1176,7 +1274,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=284;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.42554;
@@ -1192,7 +1292,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=285;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.59729;
@@ -1208,7 +1310,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=286;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.79442;
@@ -1224,7 +1328,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=287;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-131.96544;
@@ -1240,7 +1346,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=288;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.02089;
@@ -1256,7 +1364,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=289;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.16188;
@@ -1272,7 +1382,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=290;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.06523;
@@ -1288,7 +1400,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=291;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.87096;
@@ -1304,7 +1418,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=292;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.58162;
@@ -1320,7 +1436,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=293;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-132.37875;
@@ -1336,7 +1454,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=294;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.41318;
@@ -1352,7 +1472,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=295;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.67162;
@@ -1368,7 +1490,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=296;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.04007;
@@ -1384,7 +1508,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=297;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.19685;
@@ -1400,7 +1526,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=298;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.31029;
@@ -1416,7 +1544,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=299;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.70508;
@@ -1432,7 +1562,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=300;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.65746;
@@ -1448,7 +1580,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=301;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.49905;
@@ -1464,7 +1598,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=302;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-134.1853;
@@ -1480,7 +1616,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=303;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-133.98932;
@@ -1496,7 +1634,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=304;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.51315;
@@ -1512,7 +1652,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=305;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.49905;
@@ -1528,7 +1670,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=306;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.40839;
@@ -1544,7 +1688,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=307;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.26282;
@@ -1560,7 +1706,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=308;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.12207;
@@ -1576,7 +1724,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=309;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.65662;
@@ -1592,7 +1742,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=310;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-135.89764;
@@ -1608,7 +1760,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=311;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.05988;
@@ -1624,7 +1778,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=312;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.11688;
@@ -1640,7 +1796,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=313;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.10345;
@@ -1656,7 +1814,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=314;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.51212;
@@ -1672,7 +1832,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=315;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.58138;
@@ -1688,7 +1850,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=316;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.56256;
@@ -1704,7 +1868,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=317;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.46053;
@@ -1720,7 +1886,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=318;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.2561;
@@ -1736,7 +1904,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=319;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-136.95766;
@@ -1752,7 +1922,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=320;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-137.14636;
@@ -1768,7 +1940,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=321;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-137.36603;
@@ -1784,7 +1958,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=322;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-137.28871;
@@ -1800,7 +1976,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=323;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-137.14577;
@@ -1816,7 +1994,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=324;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-137.74745;
@@ -1832,7 +2012,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=325;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-137.91353;
@@ -1848,7 +2030,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=326;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-138.22472;
@@ -1864,7 +2048,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=327;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-138.02074;
@@ -1880,7 +2066,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=328;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-137.84949;
@@ -1896,7 +2084,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=329;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-127.96277;
@@ -1912,7 +2102,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=330;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.07748;
@@ -1928,7 +2120,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=331;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.37097;
@@ -1944,7 +2138,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=332;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.57034;
@@ -1960,7 +2156,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						isPlayer=1;
 					};
+
 					id=333;
 					type="Exile_Unit_GhostPlayer";
 					atlOffset=-128.83798;
