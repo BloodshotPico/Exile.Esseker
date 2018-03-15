@@ -22,19 +22,29 @@ binarizationWanted=0;
 addons[]=
 {
 	"exile_client",
+	"esseker",
 	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			className="exile_client";
-			name="exile_client";
+			name="Exile Client";
+			author="Exile Team";
+			url="http://www.exilemod.com/";
 		};
 		class Item1
+		{
+			classname="esseker";
+			name="Esseker";
+			author="RonhillUltra";
+			url="https://steamcommunity.com/sharedfiles/filedetails/?id=498101407";
+		};
+		class Item2
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
