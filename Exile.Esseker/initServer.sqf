@@ -6,9 +6,10 @@
 ExileRouletteChairs = [];
 ExileRouletteChairPositions = [];
 
-// 0 Vehicles
+// 2 Vehicles
 private _vehicles = [
-
+["Exile_Locker", [10808.7, 4734.95, 11.931], [-0.087644, -0.996152, 0.000242085], [0.00276213, 0, 0.999996], true],
+["Exile_Sign_Locker", [10812.2, 4735.87, 12.9622], [-0.997193, 0.0748748, 0], [0, 0, 1], true]
 ];
 
 {
