@@ -3630,7 +3630,7 @@ class CfgExileLootSettings
 	 * Interval in seconds when the client searches for
 	 * new buildings to spawn loot in
 	 */
-	spawnInterval = 30;
+	spawnInterval = 20;
 
 	/**
 	 * This is a percentage value to determine how many loot
@@ -3644,7 +3644,7 @@ class CfgExileLootSettings
 	 *
 	 * You can also cap it at a maximum value. See below.
 	 */
-	maximumPositionCoverage = 30;
+	maximumPositionCoverage = 50;
 
  	/**
  	 * Limit the number of loot positions per building. If the 
@@ -3654,14 +3654,14 @@ class CfgExileLootSettings
  	 * This results in 30 loot positions and that is too much. So we
  	 * cap this at 10
  	 */
-	maximumNumberOfLootSpotsPerBuilding = 3;
+	maximumNumberOfLootSpotsPerBuilding = 5;
 
 	/**
 	 * Exile spawns a random number of items per loot spot. This 
 	 * is the upper cap for that. So 3 means it could spawn 1, 2 
 	 * or 3.
 	 */
-	maximumNumberOfItemsPerLootSpot = 2;
+	maximumNumberOfItemsPerLootSpot = 3;
 
 	/**
 	 * Radius in meter to spawn loot AROUND each player.
@@ -3672,7 +3672,7 @@ class CfgExileLootSettings
 	 * 50m  = Minimum
 	 * 200m = Maximum
 	 */
-	spawnRadius = 60;
+	spawnRadius = 100;
 
 	/**
 	 * Defines the radius around trader cities where the system should
@@ -3714,7 +3714,7 @@ class CfgExileRussianRoulette
 		Minimum amount to join a session of 
 		russian roulette
 	*/
-	buyInAmount = 100;
+	buyInAmount = 1000;
 };
 class CfgFlags 
 {
@@ -4514,7 +4514,7 @@ class CfgLocker
 {
 	numbersOnly = "0123456789";
 	
-	maxDeposit = 10000;
+	maxDeposit = 250000;
 };
 
 class CfgPlayer 
